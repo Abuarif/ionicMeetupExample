@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar color="secondary">
+        <ion-title>Work</ion-title>
+    </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+<div *ngIf="auth.logged_in">
+    <div padding>
+      <h1>Welcome, You are logged in!</h1>
+      
+    </div>  
+  </div> 
+<button ion-button (click)="logout()">Logout</button>
+  <button ion-button (click)="loadData()" color="danger">Load data</button>
+  
+
+   
+</ion-content>
+
