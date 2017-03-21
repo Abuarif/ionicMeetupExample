@@ -6,8 +6,6 @@ import { AuthHttp } from 'angular2-jwt';
 @Injectable()
 export class DataService {
 
-  quote: String;
-
   constructor(public http: AuthHttp) {
     console.log('Hello DataService Provider');
   }
@@ -18,8 +16,7 @@ export class DataService {
         .map(res => res.json())
         .subscribe(data => {
           console.log(data);
-          this.quote = data;
-          resolve(this.data);
+          resolve(data);
         },
         err => {
           reject(err);
