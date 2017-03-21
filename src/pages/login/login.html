@@ -21,13 +21,13 @@
               </ion-item>
  
             </ion-list>
-              <p *ngIf="error" danger>E-mailadres / wachtwoordcombinatie zijn niet juist</p>
+              <p *ngIf="error" danger>you cannot log in with this email and password combination</p>
             <button ion-button full (click)="login()" color="primary" class="login-button">Login</button>
  
         </ion-col>
     </ion-row>
 
-<button ion-button (click)="openWorkPage()" color="danger">Work page</button>
+<button ion-button (click)="openWorkPage()" color="danger">View quotes</button>
 
  
 </ion-content>

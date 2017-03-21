@@ -42,7 +42,7 @@ export class LoginPage {
         this.loading.dismiss();
         console.log("Success-melding na login functie in login.ts: ")
         console.log(success);
-        this.nav.setRoot(WorkPage);
+        // this.nav.setRoot(WorkPage);
 
         this.error = false;
       },
