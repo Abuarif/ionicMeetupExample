@@ -32,4 +32,11 @@ export class WorkPage {
       this.quote = data;
     });
   }
+
+  loadDataPublic() {
+    this.data.dataPublic()
+    .then(data => {
+      this.quote = data;
+    });
+  }
 }

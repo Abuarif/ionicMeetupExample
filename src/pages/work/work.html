@@ -3,13 +3,16 @@
         <ion-title>Quotes</ion-title>
     </ion-navbar>
 </ion-header>
- 
+
 <ion-content>
 
-<button ion-button (click)="logout()">Logout</button>
-  <button ion-button (click)="loadData()" color="danger">Load data</button>
-  <div padding><p>{{quote}}</p></div>
+    <button ion-button (click)="loadData()" color="danger">Load protected data</button>
+    <button ion-button (click)="loadDataPublic()" color="danger">Load public data</button>
 
-   
+    <div padding>
+        <p>{{quote}}</p>
+    </div>
+
+    <button ion-button full (click)="logout()">Logout</button>
+
 </ion-content>
-

@@ -28,4 +28,22 @@ export class DataService {
     });
   }
 
+  dataPublic() {
+    return new Promise((resolve, reject) => {
+      this.http.get("http://localhost:3001/api/random-quote")
+        .map(res => res.json())
+        .subscribe(data => {
+          console.log(data);
+          resolve(data);
+        },
+        err => {
+          reject(err);
+        }
+        
+        );
+    }).catch(function(e) {
+      console.log("Error: " + e); // "oh, no!"
+    });
+  }
+
 }
